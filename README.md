@@ -95,4 +95,51 @@ Para ejecutar este código, simplemente corre el archivo `code_two.py`. El progr
 py code_two.py
 ```
 
+## code_two_v2.py : Mejora en Cuadrados Ordenados con Filtrado
+
+Este código es una versión mejorada del `code_two.py` y presenta las siguientes mejoras:
+
+### 1. Optimización en el Ordenamiento de Cuadrados (`sorted_squares`)
+
+- **Descripción:** Esta función optimiza el cálculo y ordenamiento de los cuadrados de una lista de enteros ordenados. Utiliza un enfoque de dos punteros para calcular y ordenar los cuadrados de manera más eficiente.
+- **Entrada:**
+  - Una lista de enteros ordenados en orden ascendente.
+  - Un umbral (número) para el rango de salida.
+- **Salida:**
+  - Una lista de cuadrados ordenados en orden ascendente dentro del rango permitido.
+
+- **Mejoras respecto a `code_two.py`:**
+  - **Eficiencia:** La nueva implementación usa un enfoque de dos punteros para comparar los cuadrados de los números en los extremos de la lista, lo que mejora la eficiencia en comparación con el método de Counting Sort.
+  - **Complejidad:** Reducción en la complejidad de tiempo al evitar la necesidad de una lista de conteo y al ordenar directamente los cuadrados filtrados.
+
+### 2. Generación de Lista Aleatoria (`generate_random_list`)
+
+- **Descripción:** Esta función sigue generando una lista aleatoria de enteros, sin cambios respecto a la versión anterior.
+- **Entrada:**
+  - El tamaño de la lista que se desea generar.
+  - El valor mínimo y máximo de los enteros en la lista.
+- **Salida:**
+  - Una lista de enteros aleatorios.
+
+### 3. Función Principal (`main`)
+
+- **Descripción:** Esta función principal presenta un menú al usuario para ingresar una lista manualmente o generar una lista aleatoria. Luego solicita un umbral, calcula los cuadrados, aplica el filtrado, y muestra la lista resultante.
+- **Flujo del Programa:**
+  1. El usuario elige entre ingresar una lista manualmente o generar una lista aleatoria.
+  2. Se solicita un umbral para el rango de salida.
+  3. Se calculan los cuadrados de los números en la lista, se filtran y ordenan utilizando el nuevo enfoque optimizado.
+  4. Se muestra la lista de cuadrados ordenados dentro del rango permitido.
+
+## Ejecución del Código
+
+Para ejecutar este código, simplemente corre el archivo `code_two_v2.py`. El programa te guiará a través de las opciones para ingresar o generar una lista, aplicar las funciones de ordenamiento y filtrado mejoradas, y finalmente mostrarte el resultado.
+
+```bash
+py code_two_v2.py
+```
+
+## Aclaración sobre el Umbral
+
+En ambos códigos (`code_two.py` y `code_two_v2.py`), el umbral solo necesita ser ingresado una vez. No es necesario duplicar el umbral en la entrada.
+
 ## Código 3: [Próximamente]
