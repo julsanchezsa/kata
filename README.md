@@ -1,5 +1,10 @@
 # Kata:
 
+## Introducción
+
+Para esta kata, se utilizó un hash MD5 para obtener un número entre 1 y 9. Al ingresar el nombre "Julian Sanchez", el número seleccionado es 1. Esta prueba fue realizada en Python.
+
+
 ## code_one.py : Filtrado e Inversión de Números
 
 Este código realiza las siguientes funciones:
@@ -142,4 +147,41 @@ py code_two_v2.py
 
 En ambos códigos (`code_two.py` y `code_two_v2.py`), el umbral solo necesita ser ingresado una vez. No es necesario duplicar el umbral en la entrada.
 
-## Código 3: [Próximamente]
+
+## code_three.py : Cambio Mínimo Imposible
+
+Este código realiza las siguientes funciones:
+
+### 1. Cálculo del Cambio Mínimo Imposible (`minimum_change`)
+
+- **Descripción:** Dada una lista de enteros positivos que representan los valores de las monedas en tu posesión, esta función devuelve la cantidad mínima de cambio (la suma mínima de dinero) que no puedes dar como cambio. Esto se basa en el concepto de que si tienes una serie de monedas ordenadas, la cantidad mínima que no puedes representar es el primer valor que no puedes formar usando las monedas disponibles hasta ese punto.
+- **Entrada:** 
+  - Una lista de enteros positivos que representan los valores de las monedas.
+- **Salida:** 
+  - Un entero que representa la cantidad mínima de cambio que no se puede crear.
+
+### 2. Generación de Lista Aleatoria (`generate_random_list`)
+
+- **Descripción:** Esta función genera una lista aleatoria de enteros positivos.
+- **Entrada:** 
+  - El tamaño de la lista que se desea generar.
+  - El valor máximo de los enteros en la lista.
+- **Salida:** 
+  - Una lista de enteros aleatorios generados entre 1 y el valor máximo especificado.
+
+### 3. Función Principal (`main`)
+
+- **Descripción:** Esta función presenta un menú al usuario para ingresar una lista manualmente o generar una lista aleatoria. Luego, calcula el cambio mínimo imposible usando la función `minimum_change` y muestra el resultado.
+- **Flujo del Programa:**
+  1. El usuario elige entre ingresar una lista manualmente o generar una lista aleatoria.
+  2. Si se ingresa una lista manualmente, se solicita al usuario los valores de las monedas separados por comas.
+  3. Si se elige generar una lista aleatoria, se solicita el tamaño de la lista y el valor máximo de los enteros.
+  4. Se calcula el cambio mínimo imposible y se muestra al usuario.
+
+## Ejecución del Código
+
+Para ejecutar este código, simplemente corre el archivo `code_three.py`. El programa te guiará a través de las opciones para ingresar o generar una lista de monedas, y luego calculará y mostrará la cantidad mínima de cambio que no puedes dar como cambio.
+
+```bash
+py code_three.py
+```
