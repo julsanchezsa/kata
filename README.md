@@ -42,6 +42,57 @@ Este código realiza las siguientes funciones:
 
 Para ejecutar este código, simplemente corre el archivo `code_one.py`. El programa te guiará a través de las opciones para ingresar o generar una lista, y luego aplicará las funciones de filtrado e inversión para mostrarte el resultado final.
 
-## Código 2: [Próximamente]
+
+```bash
+py code_one.py
+```
+
+## code_two.py : Cuadrados Ordenados con Filtrado
+
+Este código realiza las siguientes funciones:
+
+### 1. Ordenar y Filtrar Cuadrados (`sorted_squares`)
+
+- **Descripción:** Esta función toma una lista de enteros ordenados en orden ascendente y devuelve una nueva lista con los cuadrados de los enteros originales, también ordenados en orden ascendente. Si el número cuadrado está fuera del rango `[0, threshold]`, se elimina de la lista de salida.
+- **Entrada:**
+  - Una lista de enteros ordenados en orden ascendente.
+  - Un umbral (número) para el rango de salida.
+- **Salida:**
+  - Una lista de cuadrados ordenados en orden ascendente dentro del rango permitido.
+
+### 2. Ordenamiento con Counting Sort (`counting_sort`)
+
+- **Descripción:** Esta función ordena una lista de enteros en orden ascendente utilizando el algoritmo Counting Sort.
+- **Entrada:**
+  - Una lista de enteros a ordenar.
+  - Un umbral (número) para el rango de salida.
+- **Salida:**
+  - Una lista de enteros ordenados en orden ascendente.
+
+### 3. Generación de Lista Aleatoria (`generate_random_list`)
+
+- **Descripción:** Esta función genera una lista aleatoria de enteros.
+- **Entrada:**
+  - El tamaño de la lista que se desea generar.
+  - El valor mínimo y máximo de los enteros en la lista.
+- **Salida:**
+  - Una lista de enteros aleatorios.
+
+### 4. Función Principal (`main`)
+
+- **Descripción:** Esta es la función principal del programa que presenta un menú al usuario para ingresar una lista manualmente o generar una lista aleatoria. Luego, solicita un umbral, calcula los cuadrados, aplica el filtrado, ordena la lista resultante, y finalmente muestra la lista.
+- **Flujo del Programa:**
+  1. El usuario elige entre ingresar una lista manualmente o generar una lista aleatoria.
+  2. Se solicita un umbral para el rango de salida.
+  3. Se calculan los cuadrados de los números en la lista, se filtran y ordenan.
+  4. Se muestra la lista de cuadrados ordenados dentro del rango permitido.
+
+## Ejecución del Código
+
+Para ejecutar este código, simplemente corre el archivo `code_two.py`. El programa te guiará a través de las opciones para ingresar o generar una lista, aplicar las funciones de ordenamiento y filtrado, y finalmente mostrarte el resultado.
+
+```bash
+py code_two.py
+```
 
 ## Código 3: [Próximamente]
