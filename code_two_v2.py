@@ -22,11 +22,11 @@ def sorted_squares(nums, threshold):
         right_num = nums[right] ** 2
     
         if left_num < right_num:
-            if right_num < threshold:
+            if right_num <= threshold:
                 squared_nums.append(right_num)
             right -= 1
         else:
-            if left_num < threshold:
+            if left_num <= threshold:
                 squared_nums.append(left_num)
             left += 1
     
